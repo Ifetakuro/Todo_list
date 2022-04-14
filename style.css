@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #251e3e;
+}
+
+
+.box {
+ width: 100%;
+ position: absolute;
+ /* top: 50%;
+ left: 50%; */
+/* transform: translate(-50%, -50%); */
+padding: 5rem 1rem 1rem;
+}
+
+.box-div-1, .box-div-2 {
+  margin: auto;
+  max-width: 500px;
+  width: 100%;
+  
+}
+
+.box-div-1 {
+  /* padding: 1rem; */
+  margin-bottom: 3rem;
+}
+
+.box-div-1 .title {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 3rem;
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.todo-input-div {
+  width: 100%;
+}
+
+.box-div-1 .list-input {
+  width: 80%;
+  padding: 0.6rem;
+  border-radius: 3px;
+  outline: none;
+  border: 0;
+  font-size: 1rem;
+  color: #251e3e;
+  margin-right: 3px;
+ 
+}
+
+/* change placeholder color */
+
+.list-input::placeholder {
+  color: #251e3e;
+  opacity: 1;
+}
+
+/* internet explorer */
+:-ms-input-placeholder {
+  color: #251e3e;
+}
+
+/* microsoft edge */
+::-ms-input-placeholder {
+  color: #251e3e;
+}
+
+.box-div-1 .input-button {
+ width: 18%;
+ padding: 0.6rem 0;
+ border-radius: 3px;
+ border: 2px solid transparent;
+ background-color: #451e3e;
+ opacity: 0.5;
+ color: #fff;
+ transition: 0.3s ease-in-out;
+ cursor: pointer;
+ pointer-events: none;
+ font-size: 1rem;
+ outline: none;
+ box-shadow: 0px 2px 3px rgba(0,0,0,0.3);
+}
+
+.input-button:hover {
+  border-color: #fff;
+}
+
+.input-button.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.box-div-2 {
+  background-color: #451e3e;
+  border-radius: 3px;
+  
+}
+
+
+.todos {
+  margin-top: 5rem;
+  background-color: #fff;
+  padding: 0.4rem;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  color: #251e3e;
+  border-radius: 3px;
+}
+
+
+.todos:hover {
+  background: #e5e2f1;
+  cursor: pointer;
+}
+
+
+.todo-lists .todos.checked {
+  background-color: #605b70;
+}
+
+.todo-lists .todos.checked p {
+  text-decoration: line-through;
+}
+
+.todo-lists .todos.checked .check-btn:hover {
+  background-color: #fff;
+  color: #251e3e;
+}
+
+/* ICONS */
+
+span{
+  font-size: 1.5rem;
+}
+
+.todos div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+
+}
+
+.check-btn{
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 3px 6px 0px;
+}
+
+.check-btn:hover {
+  background-color: #451e3e;
+  color: #fff;
+}
+
+.del {
+  padding: 0.2rem 0.3rem 0;
+  border-radius: 3px;
+  transition: 0.3s ease-in-out;
+}
+
+.del:hover {
+  background-color: rgb(250, 77, 77);
+  color: #fff;
+  
+}
